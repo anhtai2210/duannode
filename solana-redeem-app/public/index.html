@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Block Puzzle</title>
+  <script src="https://unpkg.com/@solana/web3.js@1.0.0-beta.7/lib/index.iife.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <canvas id="board"></canvas>
+    <div class="side-bar">
+      <div>
+        <h1>Block Puzzle</h1>
+        <p>Điểm: <span id="score">0</span></p>
+      </div>
+      <button class="play-btn" id="play">Chơi</button>
+      <hr>
+      <button id="pause-resume">Tạm dừng</button>
+      <hr>
+      <button id="connect-wallet">Kết nối ví</button>
+      <hr>
+      <button id="redeem-points">Đổi điểm</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
+

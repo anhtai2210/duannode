@@ -1,0 +1,148 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #1e1e2e;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the game layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #282a36;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Canvas for the game board */
+canvas#board {
+  background-color: #1e1e2e;
+  border: 2px solid #50fa7b;
+  border-radius: 5px;
+  display: block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar styling */
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.side-bar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #ff79c6;
+}
+
+.side-bar p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #8be9fd;
+}
+
+.side-bar span#score {
+  color: #f1fa8c;
+  font-size: 1.2rem;
+}
+
+/* Play button */
+.play-btn {
+  background-color: #50fa7b;
+  color: #1e1e2e;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-btn:hover {
+  background-color: #69ff94;
+  transform: scale(1.05);
+}
+
+.play-btn:active {
+  background-color: #33e06f;
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  canvas#board {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .side-bar h1 {
+    font-size: 1.2rem;
+  }
+
+  .side-bar p {
+    font-size: 0.9rem;
+  }
+
+  .play-btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+/* General button styles */
+button {
+  background-color: #50fa7b;  /* Light green background */
+  color: #1e1e2e;             /* Dark text color */
+  font-size: 1rem;            /* Font size */
+  padding: 12px 24px;         /* Padding around the text */
+  border: none;               /* No border */
+  border-radius: 8px;         /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.2s ease;  /* Smooth transition for background and scale */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);  /* Subtle shadow effect */
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #69ff94;  /* Lighter green on hover */
+  transform: scale(1.05);      /* Slightly enlarge button */
+}
+
+/* Active effect */
+button:active {
+  background-color: #33e06f;  /* Darker green when button is pressed */
+  transform: scale(1);         /* Reset scale on click */
+}
+
+/* Style for the disabled state */
+button:disabled {
+  background-color: #999;      /* Grey background when disabled */
+  color: #666;                 /* Lighter text color */
+  cursor: not-allowed;         /* Change cursor to show it's disabled */
+}
+
+/* Optional - Add a focus effect for accessibility */
+button:focus {
+  outline: 2px solid #ff79c6;  /* Pink outline on focus */
+  outline-offset: 2px;         /* Offset the outline a bit */
+}
+
+
